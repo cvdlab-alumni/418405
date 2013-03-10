@@ -1,4 +1,4 @@
-console.log("\nESERCIZIO01\n");
+console.log("\nESERCIZIO 01\n");
 
 function ex01(n){
 
