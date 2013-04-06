@@ -47,4 +47,5 @@ pillars3 = STRUCT([pilMini31,pilMini32,pilRow31,pilRow32])
 
 pillars = STRUCT([pillars0,pillars1,pillars2,pillars3])
 
-VIEW(pillars)
+building = STRUCT([pillars])
+

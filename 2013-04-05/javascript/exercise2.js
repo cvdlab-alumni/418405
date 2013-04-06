@@ -49,12 +49,12 @@ var floor3 = T([2])([(2.36+0.14)*3])(STRUCT([square31,square32,square33]))
 
 //floor4
 
-var square41 = GRID([[((0.5+4.7)*4)+0.5],[0.5],[0.14]])
-var square42 = GRID([[0.5,-4.7-0.5-4.7,((0.5+4.7)*2)+0.5],[-0.5,+9.1],[0.14]])
+var square41 = GRID([[((0.5+4.7)*4)+0.5],[0.25],[0.14]])
+var square42 = GRID([[0.25,-0.25-4.7-0.5-4.7,((0.5+4.7)*2)+0.5],[-0.25,0.25+9.1],[0.14]])
 var square43 = GRID([[((0.5+4.7)*4)+0.5],[-0.5-9.1,0.5+1.8+0.5],[0.14]])
 
 var floor4 = T([2])([(2.36+0.14)*4])(STRUCT([square41,square42,square43]))
 
 var floors = STRUCT([floor0,floor1,floor2,floor3,floor4])
 
-DRAW(floors)
+var building = STRUCT([pillars,floors])
