@@ -45,4 +45,6 @@ var pilRow31 = STRUCT([T([0,1,2])([0.5+4.7+0.5+4.7,0.5+9.1,0.14+((2.36+0.14)*3)]
 var pilRow32 = STRUCT([T([0,2])([0.5+4.7+0.5+4.7,0.14+((2.36+0.14)*3)]),pil,T([0])([0.5+4.7+0.5+4.7]),pil])
 var pillars3 = STRUCT([pilMini31,pilMini32,pilRow31,pilRow32])
 
-DRAW(STRUCT([pillars0,pillars1,pillars2,pillars3]))
+pillars = STRUCT([pillars0,pillars1,pillars2,pillars3])
+
+DRAW(pillars)
