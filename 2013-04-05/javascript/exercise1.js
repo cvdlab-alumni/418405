@@ -34,7 +34,7 @@ var pillars1 = T([2])([0.14+2.36+0.14])(STRUCT([pilRow11,pilRow12,cyl11,pil11,pi
 //pillars2
 
 var pilRow21 = T([1,2])([0.5+9.1,0.14+((2.36+0.14)*2)])(pilRow11)
-var pilRow22 = STRUCT([T([2])([(0.14+((2.36+0.14)*2)]),pil,T([0])([0.5+4.7]),pil,T([0])([0.5+4.7+0.5+4.7+0.5+4.7]),pil])
+var pilRow22 = STRUCT([T([2])([(0.14+((2.36+0.14)*2))]),pil,T([0])([0.5+4.7]),pil,T([0])([0.5+4.7+0.5+4.7+0.5+4.7]),pil])
 var pillars2 = STRUCT([pilRow21,pilRow22])
 
 //pillars3
