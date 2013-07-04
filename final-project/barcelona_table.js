@@ -13,7 +13,6 @@ var barcelona_table = function () {
 //creazione e posizionamento
 
 var table = T([0,1,2])([34, 8.2, 81])(barcelona_table());
-
 DRAW(table);
 
 

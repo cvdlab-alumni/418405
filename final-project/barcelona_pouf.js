@@ -94,5 +94,4 @@ return STRUCT([barcelona_pouf_legs, barcelona_pouf_ropes, COLOR(color), barcelon
 //creazione e posizionamento
 
 var pouf = T([0,1,2])([53, 4.35, 56.5])(barcelona_pouf(BROWN));
-
 DRAW(pouf);

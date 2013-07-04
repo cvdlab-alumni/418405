@@ -3,7 +3,6 @@
 var domain1D = DOMAIN([[0, 1]])([8]);
 var domain2D = DOMAIN([[0, 1],[0, 1]])([8, 8]);
 var detailed_domain2D = DOMAIN([[0, 1], [0, 1]])([32, 32]);
-var domcir0 = PROD1x1([INTERVALS(2*PI)(30), INTERVALS(1)(12)]);
 
 var CYLINDER = function(r,h){
   function C0(l){
@@ -26,13 +25,6 @@ var bs2 = function(l){
 	return MAP(BEZIER(S1)([c1, c2]))(domain2D);
 }
 
-var Circum = function(h, r){
-	var Circum0 = function(v){
-		return [r*COS(v[0]), r*SIN(v[0]), h];
-	}
-	return Circum0;
-}
-
 //3-curves bezier surface
 
 var bs3 = function(l){
@@ -44,21 +36,4 @@ var bs3 = function(l){
   c3 = BEZIER(S0)(p3);
   //DRAW(STRUCT([MAP(c1)(dom1D),MAP(c2)(dom1D),MAP(c3)(domain1D)]));
   return MAP(BEZIER(S1)([c1,c2,c3]))(domain2D);
-}
-
-//5-curves bezier surface
-
-var bs5 = function(l){
-  p1 = l[0];
-  p2 = l[1];
-  p3 = l[2];
-  p4 = l[3];
-  p5 = l[4];
-  c1 = BEZIER(S0)(p1);
-  c2 = BEZIER(S0)(p2);
-  c3 = BEZIER(S0)(p3);
-  c4 = BEZIER(S0)(p4);
-  c5 = BEZIER(S0)(p5);
-  //DRAW(STRUCT([MAP(c1)(dom1D),MAP(c2)(dom1D),MAP(c3)(domain1D),MAP(c4)(dom1D),MAP(c5)(domain1D)]));
-  return MAP(BEZIER(S1)([c1,c2,c3,c4,c5]))(domain2D);
 }

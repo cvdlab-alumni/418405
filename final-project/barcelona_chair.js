@@ -4,7 +4,6 @@ var BROWN = [202/255, 141/255, 72/255];
 var barcelona_chair = function(color){
 
 	//skeleton - legs
-
 	var points000 = [[4.59, 3.84, 0], [4.79, 3.7, 0], [3.66, 3.21, 0], [3.05, 3.29, 0]];
 	var points001 = [[4.78, 3.68, 0], [4.66, 3.84, 0], [4.15, 3.21, 0], [3.06, 3.26, 0]]
 	var legs00 = bs2([points000, points001]);
@@ -76,7 +75,6 @@ var barcelona_chair = function(color){
 	var barcelona_legs = STRUCT([legs0, legs1, legs2, legs3, T([2])([0.1+2.48]), legs0]);
 
 	//ropes
-
 	var points018 = [[3.19+0.12, 4.46, 0.1], [3.189, 4.477, 0.1], [3.178, 4.515, 0.1], [3.19+0.12, 4.495, 0.1], 
 	[4.923, 4, 0.1], [4.96, 3.98, 0.1], [4.905, 3.93, 0.1], [4.89, 3.915, 0.1], [4.875, 3.955, 0.1]];
 	var ropeNUBS00 =  NUBS(S0)(1)([0,0,1,2,3,4,5,6,7,8,8])(points018);
@@ -112,9 +110,7 @@ var barcelona_chair = function(color){
 	var barcelona_ropes = STRUCT([COLOR([50/255, 50/255, 50/255]), ropes0, ropes1]);
 
 	//pillows
-
 	//bottom pillow
-
 	var points026 = [[5.14, 4.24, 0], [3.23, 4.77, 0]];
 	var points027 = [[5.1, 4.15, 0], [4.61, 4.26, 0], [3.64, 4.49, 0], [3.17, 4.69, 0]];
 	var points028 = [[5.04, 4.08, 0], [3.16, 4.58, 0]];
@@ -131,7 +127,6 @@ var barcelona_chair = function(color){
 	var pillow00 = STRUCT([pill00, pill01, pill02, pill03, pill04, pill05]);
 
 	//bottom pillow squares
-
 	var points032 = [[3.69, 4.65, 0.27], [3.51, 4.88, 0.27], [3.45, 4.9, 0.27], [3.25, 4.77, 0.27]];
 	var points033 = [[3.69, 4.65, 0], [3.25, 4.77, 0]];
 	var points034 = [[3.69, 4.65, 0.54], [3.25, 4.77, 0.54]];
@@ -158,7 +153,6 @@ var barcelona_chair = function(color){
 	var pillow_buttons00 = STRUCT(REPLICA(4)([pillow_buttons_row0, T([2])([0.54])]));
 
 	//back pillow
-
 	var points044 = [[5.13, 4.28, 0], [5.36, 4.63, 0], [5.75, 5.46, 0], [5.79, 5.84, 0]];
 	var points045 = [[5.04, 4.31, 0], [5.35, 4.81, 0], [5.56, 5.32, 0], [5.7, 5.9, 0]];
 	var points046 = [[4.98, 4.35, 0], [5.24, 4.84, 0], [5.47, 5.36, 0], [5.61, 5.91, 0]];
@@ -176,7 +170,6 @@ var barcelona_chair = function(color){
 	var pillow02 = STRUCT([pill10, pill11, pill12, pill13, pill14, pill15]);
 
 	//back pillow squares
-
 	var points050 = [[4.98, 4.38, 0.27], [4.92, 4.45, 0.27], [5.08, 4.78, 0.27], [5.16, 4.72, 0.27]];
 	var points051 = [[4.98, 4.38, 0], [5.16, 4.72, 0]];
 	var points052 = [[4.98, 4.38, 0.54], [5.16, 4.72, 0.54]];
@@ -210,9 +203,7 @@ var barcelona_chair = function(color){
 //creazione e posizionamento
 
 var barcelona_chair0 =  T([0,1,2])([43, 5.1, 77.5])(R([0, 2])([PI])(S([0,1,2])([1.25,1.25,1.25])(barcelona_chair(BROWN))));
-
 DRAW(barcelona_chair0);
 
 var barcelona_chair1 =  T([0,1,2])([47, 5.1, 76])(R([0, 2])([-PI/2])(S([0,1,2])([1.25,1.25,1.25])(barcelona_chair(BROWN))));
-
 DRAW(barcelona_chair1);
